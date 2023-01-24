@@ -1,0 +1,43 @@
+// Million ppl suffering from diabetes and eyesight is affected 
+// Have to visit doc office every month to analyze their eyes and categorize where they fall
+// Some categories are given additional medicine, some must be seen by the doc, and some are just fine and may keep going on as is or lessen dose
+// Need 7 Images of each eye from every customer. (takes 2 hours (1 million ppl --- 2mill hours))
+
+// Doc works 8 hours a day
+// Therefore 1 million / 3 docs = ~333,333 
+
+// Each image provides different atrributes/feature (7 per eye --- 14 atrributes / person)
+
+
+-------pseudo_code--------
+
+// Assuming that their is access to an arbitrarily large amount of funds
+
+
+function increaseCostEfficiency (fundingAmount: int, machineCost: int ) {
+    amountOfMachines: int = 0
+    while (fundingAmount > 0) {
+        fundingAmount - machineCost
+        amountOfMachines += 1
+    }
+
+    numberOfAttributesAnaylzed: int = amountOfMachines * 14
+    numberOfHoursForAllMachinesToAnaylzeEyes = numberOfAttributesAnaylzed * 2
+    hoursToAnalyzeAllPatients: int = 2,000,000
+
+    amountOfHoursToRehabilitatePatients: int = hoursToAnalyzeAllPatients / numberOfHoursForAllMachinesToAnaylzeEyes 
+
+    patientToCategory: map;
+
+    while(amountOfHoursToRehabilitatePatients > 0)
+    {
+        Each machine should check a patients set of eyes and place in their proper category     
+        if(patient < certain_threshold) then put in category 1 (using patientToCategory mapping)
+        if( patient > certain_threshold && major_threshold) then put in category 2(using patientToCategory mapping)
+        if(patient >= major_threshold ) then put in category 3 (using patientToCategory mapping)
+
+        amountOfHoursToRehabilitatePatients -= 2
+    }
+
+    return patientToCategory;
+}
